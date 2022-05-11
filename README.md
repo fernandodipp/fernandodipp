@@ -1,16 +1,15 @@
-### Hi there 👋
+### Olá, você! / Hi there! 👋
 
-<!--
-**fernandodipp/fernandodipp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 🌱 I’m currently learning Software Development in Faculdade SENAI de Tecnologia Porto Alegre
+- 🤔 I’m looking for help with starting my career as a software developer
+- 📫 How to reach me: fernando.dipp@gmail.com
+- ⚡ Fun fact: I'm funnier in person...
 -->
+
+<table>
+  <tr>
+    <td><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fernandodipp&layout=compact&langs_count=7&theme=dracula"/></td>
+    <td><img height="180em" src="https://github-readme-stats.vercel.app/api?username=fernandodipp&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/></td>
+  </tr>
+  </table>
+
