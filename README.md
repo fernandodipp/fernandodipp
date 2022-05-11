@@ -6,10 +6,10 @@
 - ⚡ Fun fact: I'm funnier in person...
 -->
 
-<table>
-  <tr>
-    <td><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fernandodipp&layout=compact&langs_count=7&theme=dracula"/></td>
-    <td><img height="180em" src="https://github-readme-stats.vercel.app/api?username=fernandodipp&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/></td>
-  </tr>
-  </table>
+<div align="left">
+  <a href="https://github.com/fernandodipp">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=fernandodipp&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fernandodipp&layout=compact&langs_count=7&theme=dracula"/>
+</div>
+
 
