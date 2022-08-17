@@ -3,8 +3,6 @@
 - 🌱 I’m currently learning Software Development in Faculdade SENAI de Tecnologia Porto Alegre
 - 🤔 I’m looking for help with starting my career as a software developer
 - 📫 How to reach me: fernando.dipp@gmail.com
-- ⚡ Fun fact: I'm funnier in person...
--->
 
 <div align="left">
   <a href="https://github.com/fernandodipp">
