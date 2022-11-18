@@ -1,7 +1,6 @@
 ### Olá, você! / Hi there! 👋
 
-- 🌱 I’m currently learning Software Development in Faculdade SENAI de Tecnologia Porto Alegre
-- 🤔 I’m looking for help with starting my career as a software developer
+- 💼 Software Developer Trainee at Compass.Uol | Data & Analytics | Porto Alegre, RS, Brazil
 - 📫 How to reach me: fernando.dipp@gmail.com
 
 <div align="left">
