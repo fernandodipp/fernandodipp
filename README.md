@@ -1,6 +1,6 @@
 ### Olá, você! / Hi there! 👋
 
-- 💼 Software Developer Trainee at Compass.Uol | Data & Analytics | Porto Alegre, RS, Brazil
+- 💼 Software Developer | Data & Analytics | Porto Alegre, RS, Brazil
 - 📫 How to reach me: fernando.dipp@gmail.com
 
 <div align="left">
