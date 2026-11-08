@@ -14,8 +14,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function (h) {
+      h.classList.add("js");
+      try {
+        if (sessionStorage.getItem("convite-aberto") || matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          h.classList.add("sem-intro");
+        }
+      } catch (e) { h.classList.add("sem-intro"); }
+    })(document.documentElement);
+  </script>
 </head>
 <body>
+
+  <!-- Convite de abertura -->
+  <div class="intro" role="dialog" aria-label="Convite">
+    <div class="envelope">
+      <div class="env-fundo"></div>
+      <div class="env-carta">
+        <img src="assets/img/marca/monograma.png" alt="">
+        <p class="script">Carolina &amp; Fernando</p>
+        <span>convidam você para celebrar</span>
+        <strong>20 . 03 . 2027</strong>
+      </div>
+      <div class="env-lados"></div>
+      <div class="env-base"></div>
+      <div class="env-aba"></div>
+      <button class="selo" type="button" aria-label="Abrir o convite">
+        <img src="assets/img/marca/monograma.png" alt="">
+      </button>
+    </div>
+    <p class="intro-dica">Toque no selo para abrir</p>
+    <button class="intro-pular" type="button">Pular</button>
+  </div>
+
+  <div class="progresso" aria-hidden="true"></div>
 
   <!-- Cabeçalho -->
   <header class="topo" id="topo">
@@ -42,19 +75,21 @@
     <!-- 1. Abertura e contagem regressiva -->
     <section class="hero" id="inicio">
       <div class="hero-foto" style="background-image:url('assets/img/galeria/018.jpg')"></div>
+      <div class="petalas" aria-hidden="true"></div>
       <div class="hero-conteudo">
-        <img class="hero-monograma" src="assets/img/marca/monograma.png" alt="">
-        <p class="hero-data">20 . 03 . 2027</p>
-        <h1 class="hero-nomes">Carolina <span>&amp;</span> Fernando</h1>
-        <p class="hero-rotulo">Contagem regressiva para o grande dia</p>
-        <div class="contagem" aria-live="polite">
+        <img class="hero-monograma" style="--i:0" src="assets/img/marca/monograma.png" alt="">
+        <p class="hero-data" style="--i:1">20 . 03 . 2027</p>
+        <h1 class="hero-nomes" style="--i:2">Carolina <span>&amp;</span> Fernando</h1>
+        <p class="hero-rotulo" style="--i:3">Contagem regressiva para o grande dia</p>
+        <div class="contagem" style="--i:4" aria-live="polite">
           <div><strong data-contagem="dias">000</strong><span>Dias</span></div>
           <div><strong data-contagem="horas">00</strong><span>Horas</span></div>
           <div><strong data-contagem="minutos">00</strong><span>Minutos</span></div>
           <div><strong data-contagem="segundos">00</strong><span>Segundos</span></div>
         </div>
-        <a href="#confirmar" class="botao botao-claro">Confirmar presença</a>
+        <a href="#confirmar" class="botao botao-claro" style="--i:5">Confirmar presença</a>
       </div>
+      <a href="#historia" class="rolar" aria-label="Rolar para baixo"><span></span></a>
     </section>
 
     <!-- 2. Versículo -->
@@ -66,17 +101,37 @@
       </blockquote>
     </section>
 
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa-trilho">
+        <span>Carolina <i>&amp;</i> Fernando</span><b>♡</b><span>20 . 03 . 2027</span><b>♡</b><span>Casa de Campo</span><b>♡</b>
+        <span>Carolina <i>&amp;</i> Fernando</span><b>♡</b><span>20 . 03 . 2027</span><b>♡</b><span>Casa de Campo</span><b>♡</b>
+        <span>Carolina <i>&amp;</i> Fernando</span><b>♡</b><span>20 . 03 . 2027</span><b>♡</b><span>Casa de Campo</span><b>♡</b>
+        <span>Carolina <i>&amp;</i> Fernando</span><b>♡</b><span>20 . 03 . 2027</span><b>♡</b><span>Casa de Campo</span><b>♡</b>
+      </div>
+    </div>
+
     <!-- 3. Nossa história -->
     <section class="secao historia" id="historia">
+      <img class="ramo ramo-dir" src="assets/img/marca/pampas.png" alt="" aria-hidden="true">
+      <img class="ramo ramo-esq" src="assets/img/marca/flor1.png" alt="" aria-hidden="true">
       <header class="titulo-secao">
         <span class="script">Nossa</span>
         <h2>História</h2>
       </header>
       <div class="historia-grade">
         <div class="historia-fotos">
-          <img src="assets/img/galeria/054.jpg" alt="Carolina e Fernando com as testas encostadas" loading="lazy">
-          <img src="assets/img/galeria/076.jpg" alt="Carolina e Fernando sorrindo abraçados" loading="lazy">
-          <img src="assets/img/galeria/171.jpg" alt="Carolina e Fernando com o cachorro" loading="lazy">
+          <figure class="polaroid" style="--r:-2.5deg">
+            <img src="assets/img/galeria/054.jpg" alt="Carolina e Fernando com as testas encostadas" loading="lazy">
+            <figcaption>nós dois</figcaption>
+          </figure>
+          <figure class="polaroid" style="--r:3deg">
+            <img src="assets/img/galeria/076.jpg" alt="Carolina e Fernando sorrindo abraçados" loading="lazy">
+            <figcaption>risadas</figcaption>
+          </figure>
+          <figure class="polaroid" style="--r:-4deg">
+            <img src="assets/img/galeria/171.jpg" alt="Carolina e Fernando com o cachorro" loading="lazy">
+            <figcaption>nossa família</figcaption>
+          </figure>
         </div>
         <div class="historia-texto">
           <p class="destaque">Toda grande história tem encontros inesperados, capítulos difíceis, momentos de riso e promessas que mudam tudo.</p>
@@ -148,12 +203,13 @@
 
     <!-- 5. Cerimônia religiosa e festa -->
     <section class="secao cerimonia" id="cerimonia">
+      <img class="ramo ramo-esq" src="assets/img/marca/folha.png" alt="" aria-hidden="true">
       <header class="titulo-secao">
         <span class="script">Cerimônia religiosa</span>
         <h2>e Festa</h2>
         <p>Não percam esse momento lindo e emocionante das nossas vidas. Contamos com você para ser ainda mais especial!</p>
       </header>
-      <div class="cartao-local">
+      <div class="cartao-local inclinavel">
         <img src="assets/img/galeria/087.jpg" alt="Cabana em A no local da festa" loading="lazy">
         <div class="cartao-local-texto">
           <h3 data-texto="localNome">Casa de Campo</h3>
@@ -253,6 +309,7 @@
 
     <!-- 9. Recados -->
     <section class="secao recados" id="recados">
+      <img class="ramo ramo-dir" src="assets/img/marca/folha.png" alt="" aria-hidden="true">
       <header class="titulo-secao">
         <span class="script">Deixe sua mensagem</span>
         <h2>para nós!</h2>
@@ -305,6 +362,7 @@
     <button class="lb-anterior" aria-label="Foto anterior">‹</button>
     <img alt="">
     <button class="lb-proxima" aria-label="Próxima foto">›</button>
+    <p class="lb-contador"></p>
   </div>
 
   <script src="assets/js/config.js"></script>
